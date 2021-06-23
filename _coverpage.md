@@ -17,7 +17,3 @@
 * 批量读取数据并校验数据（实现BaseProcessor接口批量存储）
 
 [开始阅读](/README.md)
-
-<!--封面-->
-
-![](https://blockchainlittlebook.com/images/blbcover.gif)
