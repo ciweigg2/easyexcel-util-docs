@@ -1,73 +1,81 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>easyexcel-util</title>
-  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
-  <meta name="description" content="Description">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/docsify-themeable@0/dist/css/theme-simple.css">
-  <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+    <meta charset="UTF-8">
+    <title>easyexcel-util</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
+    <meta name="description" content="Description">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/docsify-themeable@0/dist/css/theme-simple.css">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon"/>
+    <!--CHANGELOG插件-->
+    <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/docsify-changelog-plugin@latest/dist/style.css"/>
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css"/>
+    <!--CHANGELOG插件-->
 </head>
 <body>
-  <nav>
-      EasyExcel Util
-  </nav>
-  <div id="app"></div>
-  <script>
+<nav>
+    EasyExcel Util
+</nav>
+<div id="app"></div>
+<script>
     window.$docsify = {
-      name: 'EasyExcel工具类',
-      repo: 'https://github.com/ciweigg2',
-      loadSidebar: true,
-	  subMaxLevel: 3,
-      auto2top: true,
-      coverpage: true,
-      onlyCover: true,
-      // logo: 'https://cdn.jsdelivr.net/gh/itwanger/Tech-Sister-Learn-Java/images/logo.png',
-      //全局搜索
-      search: {
-        paths: 'auto',
-        placeholder: '搜索',
-        noData: '找不到结果',
-        depth: 3,
-      },
-      //字数统计
-      count:{
-        countable:true,
-        fontsize:'0.9em',
-        color:'rgb(90,90,90)',
-        language:'chinese'
-      },
-      //分页
-      pagination: {
-        previousText: '上一章节',
-        nextText: '下一章节',
-        crossChapter: true,
-        crossChapterText: true,
-      }
+        name: 'EasyExcel工具类',
+        repo: 'https://github.com/ciweigg2',
+        loadSidebar: true,
+        subMaxLevel: 3,
+        auto2top: true,
+        coverpage: true,
+        onlyCover: true,
+        loadNavbar: false, // IMPORTANT
+        changelog: 'CHANGELOG.md', // path of your changelog, it can be remote as well
+        // logo: 'https://cdn.jsdelivr.net/gh/itwanger/Tech-Sister-Learn-Java/images/logo.png',
+        //全局搜索
+        search: {
+            paths: 'auto',
+            placeholder: '搜索',
+            noData: '找不到结果',
+            depth: 3,
+        },
+        //字数统计
+        count: {
+            countable: true,
+            fontsize: '0.9em',
+            color: 'rgb(90,90,90)',
+            language: 'chinese'
+        },
+        //分页
+        pagination: {
+            previousText: '上一章节',
+            nextText: '下一章节',
+            crossChapter: true,
+            crossChapterText: true,
+        }
     }
-  </script>
-  <!-- Docsify v4 -->
-  <script src="//cdn.jsdelivr.net/npm/docsify@4"></script>
-  <!--代码高亮-->
-  <script src="//cdn.jsdelivr.net/npm/prismjs@1.22.0/components/prism-c.min.js"></script>
-  <script src="//cdn.jsdelivr.net/npm/prismjs@1.22.0/components/prism-cpp.min.js"></script>
-  <script src="//unpkg.com/prismjs/components/prism-bash.js"></script>
-  <script src="//unpkg.com/prismjs/components/prism-java.js"></script>
-  <script src="//unpkg.com/prismjs/components/prism-sql.js"></script>
-  <script src="//unpkg.com/prismjs/components/prism-bash.js"></script>
-  <script src="//unpkg.com/prismjs/components/prism-c.js"></script>
-  <script src="//unpkg.com/prismjs@1.23.0/components.js"></script>
-  <!--代码复制-->
-  <script src="//cdn.jsdelivr.net/npm/docsify-copy-code"></script>
-  <!--图片缩放-->
-  <script src="//cdn.jsdelivr.net/npm/docsify/lib/plugins/zoom-image.min.js"></script>
-  <!--分页-->
-  <script src="//cdn.jsdelivr.net/npm/docsify-pagination/dist/docsify-pagination.min.js"></script>
-  <!--搜索-->
-  <script src="//cdn.jsdelivr.net/npm/docsify/lib/plugins/search.min.js"></script>
-  <!--字数统计-->
+</script>
+<!-- Docsify v4 -->
+<script src="//cdn.jsdelivr.net/npm/docsify@4"></script>
+<!--代码高亮-->
+<script src="//cdn.jsdelivr.net/npm/prismjs@1.22.0/components/prism-c.min.js"></script>
+<script src="//cdn.jsdelivr.net/npm/prismjs@1.22.0/components/prism-cpp.min.js"></script>
+<script src="//unpkg.com/prismjs/components/prism-bash.js"></script>
+<script src="//unpkg.com/prismjs/components/prism-java.js"></script>
+<script src="//unpkg.com/prismjs/components/prism-sql.js"></script>
+<script src="//unpkg.com/prismjs/components/prism-bash.js"></script>
+<script src="//unpkg.com/prismjs/components/prism-c.js"></script>
+<script src="//unpkg.com/prismjs@1.23.0/components.js"></script>
+<!--代码复制-->
+<script src="//cdn.jsdelivr.net/npm/docsify-copy-code"></script>
+<!--图片缩放-->
+<script src="//cdn.jsdelivr.net/npm/docsify/lib/plugins/zoom-image.min.js"></script>
+<!--分页-->
+<script src="//cdn.jsdelivr.net/npm/docsify-pagination/dist/docsify-pagination.min.js"></script>
+<!--搜索-->
+<script src="//cdn.jsdelivr.net/npm/docsify/lib/plugins/search.min.js"></script>
+<!--字数统计-->
 <!--  <script src="//unpkg.com/docsify-count/dist/countable.js"></script>-->
-  <script src="js/countable.js"></script>
+<script src="js/countable.js"></script>
+<!--CHANGELOG插件-->
+<script src="https://cdn.jsdelivr.net/npm/docsify-changelog-plugin@latest/dist/index.js"></script>
 </body>
 </html>
